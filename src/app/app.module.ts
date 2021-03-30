@@ -12,6 +12,7 @@ import { WsbcJumplinksComponent } from './wsbc-jumplinks/wsbc-jumplinks.componen
 import { WsbcSubheaderComponent } from './wsbc-subheader/wsbc-subheader.component';
 import { WsbcFooterComponent } from './wsbc-footer/wsbc-footer.component';
 import { MobileToolbarComponent } from './mobile-toolbar/mobile-toolbar.component';
+import { WsbcHeaderComponent } from './wsbc-header/wsbc-header.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { MobileToolbarComponent } from './mobile-toolbar/mobile-toolbar.componen
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
