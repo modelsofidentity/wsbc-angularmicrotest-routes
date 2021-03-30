@@ -9,6 +9,8 @@ import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { IntroStackComponent } from './intro-stack/intro-stack.component';
 import { WsbcJumplinksComponent } from './wsbc-jumplinks/wsbc-jumplinks.component';
+import { WsbcSubheaderComponent } from './wsbc-subheader/wsbc-subheader.component';
+import { WsbcFooterComponent } from './wsbc-footer/wsbc-footer.component';
 
 
 @NgModule({
@@ -23,7 +25,7 @@ import { WsbcJumplinksComponent } from './wsbc-jumplinks/wsbc-jumplinks.componen
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
