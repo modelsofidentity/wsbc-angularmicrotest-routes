@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { IntroStackComponent } from './intro-stack/intro-stack.component';
+import { WsbcJumplinksComponent } from './wsbc-jumplinks/wsbc-jumplinks.component';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { IntroStackComponent } from './intro-stack/intro-stack.component';
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
