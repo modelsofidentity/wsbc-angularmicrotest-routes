@@ -13,21 +13,27 @@ import { WsbcSubheaderComponent } from './wsbc-subheader/wsbc-subheader.componen
 import { WsbcFooterComponent } from './wsbc-footer/wsbc-footer.component';
 import { MobileToolbarComponent } from './mobile-toolbar/mobile-toolbar.component';
 import { WsbcHeaderComponent } from './wsbc-header/wsbc-header.component';
+import { HomeComponent } from './home/home.component';
+import { InstructionsComponent } from './instructions/instructions.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserModule,
   
  RouterModule.forRoot([
-    {path: 'crisis-list', component: CrisisListComponent},  //here the path tagname and the component class
-    {path: 'heroes-list', component: HeroesListComponent}, //here we set the path for this thing
-    {path: '', redirectTo: '/heroes-list', pathMatch: 'full'}  //this creates the home page kind of
+    {path: 'crisis-list', component: CrisisListComponent},  
+    {path: 'heroes-list', component: HeroesListComponent},
+    {path: 'confirmation', component: ConfirmationComponent},  
+    {path: 'home', component: HomeComponent}, 
+    {path: '', redirectTo: '/app-home', pathMatch: 'full'}  
+ 
 
     
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent, HomeComponent, InstructionsComponent, ConfirmationComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
