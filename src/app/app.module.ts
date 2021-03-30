@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WsbcFormComponent } from './wsbc-form/wsbc-form.component';
+import { AccountinfoComponent } from './accountinfo/accountinfo.component';
 
 
 @NgModule({
@@ -25,14 +27,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
  RouterModule.forRoot([
     {path: 'crisis-list', component: CrisisListComponent},  
     {path: 'heroes-list', component: HeroesListComponent},
+    {path: 'form', component: WsbcFormComponent},  
     {path: 'confirmation', component: ConfirmationComponent},  
     {path: 'home', component: HomeComponent}, 
     {path: 'dashboard', component: DashboardComponent}, 
+      {path: 'account', component: AccountinfoComponent}, 
     {path: '', redirectTo: '/app-home', pathMatch: 'full'}  
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent, HomeComponent, InstructionsComponent, ConfirmationComponent, DashboardComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent, HomeComponent, InstructionsComponent, ConfirmationComponent, DashboardComponent, WsbcFormComponent, AccountinfoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
