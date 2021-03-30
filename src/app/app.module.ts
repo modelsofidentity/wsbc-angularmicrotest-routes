@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { IntroStackComponent } from './intro-stack/intro-stack.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -1,21 +1,48 @@
 <header class="pb-4 header-border-bottom">
-<div class="header-thinline"></div>
-<div class="header-topline">
-<div class="header-curve"></div>
-</div>
-<div class="container">
-<div class="row">
-<div class="col-6"><img class="img-fluid d-block" src="https://ux-static.online.worksafebc.com/css/assets/img/worksafebc-logo.jpg"></div>
-<div class="col-6 d-flex justify-content-end align-items-center text-right"><a class="exitbutton" href="#">Exit</a></div>
-</div>
-</div>
+  <div class="header-thinline"></div>
+  <div class="header-topline">
+    <div class="header-curve"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <img
+          class="img-fluid d-block"
+          src="https://ux-static.online.worksafebc.com/css/assets/img/worksafebc-logo.jpg"
+        />
+      </div>
+      <div
+        class="col-6 d-flex justify-content-end align-items-center text-right"
+      >
+        <a class="exitbutton" href="#">Exit</a>
+      </div>
+    </div>
+  </div>
 </header>
 
-
-<h1>Angular Router Sample</h1>
-<nav>
-  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton">Crisis Center</a> |
-  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton">Heroes</a>
-</nav>
+<section>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Angular Router Sample</h1>
+        <nav>
+          <a
+            class="button"
+            routerLink="/crisis-list"
+            routerLinkActive="activebutton"
+            >Crisis Center</a
+          >
+          |
+          <a
+            class="button"
+            routerLink="/heroes-list"
+            routerLinkActive="activebutton"
+            >Heroes</a
+          >
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
 
 <router-outlet></router-outlet>
