@@ -16,6 +16,7 @@ import { WsbcHeaderComponent } from './wsbc-header/wsbc-header.component';
 import { HomeComponent } from './home/home.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -26,14 +27,12 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     {path: 'heroes-list', component: HeroesListComponent},
     {path: 'confirmation', component: ConfirmationComponent},  
     {path: 'home', component: HomeComponent}, 
+    {path: 'dashboard', component: DashboardComponent}, 
     {path: '', redirectTo: '/app-home', pathMatch: 'full'}  
- 
-
-    
   ]), ],
 
 
-  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent, HomeComponent, InstructionsComponent, ConfirmationComponent ],
+  declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, IntroStackComponent, WsbcJumplinksComponent, WsbcSubheaderComponent, WsbcFooterComponent, MobileToolbarComponent, WsbcHeaderComponent, HomeComponent, InstructionsComponent, ConfirmationComponent, DashboardComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
